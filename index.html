@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Championship Wrestling</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Championship Wrestling</h1>
+        
+        <!-- Game Canvas -->
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        
+        <!-- Game Controls -->
+        <div class="controls">
+            <div class="control-section">
+                <h3>Player 1 Controls</h3>
+                <p>WASD - Move | Space - Grapple | F - Strike | G - Pick Up Weapon</p>
+            </div>
+            <div class="control-section">
+                <h3>Player 2 Controls</h3>
+                <p>Arrow Keys - Move | Enter - Grapple | L - Strike | K - Pick Up Weapon</p>
+            </div>
+        </div>
+        
+        <!-- Game Info -->
+        <div class="game-info">
+            <div class="player-info">
+                <div class="player1">
+                    <h4>Player 1</h4>
+                    <div class="health-bar">
+                        <div class="health" id="player1Health"></div>
+                    </div>
+                    <div class="stamina-bar">
+                        <div class="stamina" id="player1Stamina"></div>
+                    </div>
+                </div>
+                
+                <div class="match-info">
+                    <h4>Championship Wrestling</h4>
+                    <p id="matchStatus">Press R to Start Match</p>
+                </div>
+                
+                <div class="player2">
+                    <h4>Player 2</h4>
+                    <div class="health-bar">
+                        <div class="health" id="player2Health"></div>
+                    </div>
+                    <div class="stamina-bar">
+                        <div class="stamina" id="player2Stamina"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Load Game Scripts -->
+    <script src="ring.js"></script>
+    <script src="weapons.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>

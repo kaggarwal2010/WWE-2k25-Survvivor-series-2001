@@ -1,0 +1,141 @@
+/* Championship Wrestling Styles */
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: white;
+    text-align: center;
+}
+
+.game-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #ffd700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin-bottom: 20px;
+}
+
+/* Game Canvas Styling */
+#gameCanvas {
+    border: 3px solid #ffd700;
+    border-radius: 10px;
+    background: #2d5a27;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+/* Controls Section */
+.controls {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    background: rgba(0,0,0,0.3);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.control-section {
+    text-align: center;
+}
+
+.control-section h3 {
+    color: #ffd700;
+    margin-bottom: 10px;
+}
+
+.control-section p {
+    font-size: 0.9em;
+    color: #cccccc;
+}
+
+/* Game Info Section */
+.game-info {
+    background: rgba(0,0,0,0.4);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.player-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.player1, .player2 {
+    width: 200px;
+}
+
+.match-info {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.match-info h4 {
+    color: #ffd700;
+    margin-bottom: 10px;
+}
+
+/* Health and Stamina Bars */
+.health-bar, .stamina-bar {
+    width: 100%;
+    height: 20px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    margin: 5px 0;
+    overflow: hidden;
+}
+
+.health {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, #ff4444, #ff6666);
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+
+.stamina {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, #4444ff, #6666ff);
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+
+/* Player Labels */
+.player1 h4 {
+    color: #ff6666;
+}
+
+.player2 h4 {
+    color: #6666ff;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    #gameCanvas {
+        width: 100%;
+        height: auto;
+    }
+    
+    .controls {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .player-info {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .player1, .player2 {
+        width: 100%;
+    }
+}
